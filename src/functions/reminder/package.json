@@ -1,0 +1,25 @@
+{
+  "name": "reminder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -f index.js",
+    "prebuild": "npm run clean",
+    "test": "jest --ci --coverage --reporters=default --reporters=jest-junit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "jest-junit": "^16.0.0",
+    "ts-jest": "^29.3.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.787.0",
+    "@aws-sdk/client-sns": "^3.787.0"
+  }
+}

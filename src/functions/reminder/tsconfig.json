@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2024",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": ".",
+    "rootDir": "src"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

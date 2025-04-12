@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="4" failures="0" errors="0" time="1.799">
+  <testsuite name="Reminder Lambda Function" errors="0" failures="0" skipped="0" timestamp="2025-04-12T18:00:44" time="1.637" tests="4">
+    <testcase classname="Reminder Lambda Function should generate a haiku and send it via SNS" name="Reminder Lambda Function should generate a haiku and send it via SNS" time="0.02">
+    </testcase>
+    <testcase classname="Reminder Lambda Function should handle Bedrock API errors gracefully" name="Reminder Lambda Function should handle Bedrock API errors gracefully" time="0.005">
+    </testcase>
+    <testcase classname="Reminder Lambda Function should handle SNS API errors gracefully" name="Reminder Lambda Function should handle SNS API errors gracefully" time="0.006">
+    </testcase>
+    <testcase classname="Reminder Lambda Function should handle missing environment variables" name="Reminder Lambda Function should handle missing environment variables" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>
