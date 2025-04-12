@@ -12,3 +12,12 @@ cdk.out
 
 # Env variables
 .env
+
+# Test results
+test-results
+
+# Coverage results
+coverage
+
+# Build results
+build
