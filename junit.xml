@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="6" failures="0" errors="0" time="13.528">
+  <testsuite name="AiReminderBotStack" errors="0" failures="0" skipped="0" timestamp="2025-04-12T18:09:34" time="13.356" tests="6">
+    <testcase classname="AiReminderBotStack SNS Topic is created" name="AiReminderBotStack SNS Topic is created" time="2.182">
+    </testcase>
+    <testcase classname="AiReminderBotStack SNS Subscription is created with the correct phone number" name="AiReminderBotStack SNS Subscription is created with the correct phone number" time="1.516">
+    </testcase>
+    <testcase classname="AiReminderBotStack Lambda function is created with correct properties" name="AiReminderBotStack Lambda function is created with correct properties" time="1.609">
+    </testcase>
+    <testcase classname="AiReminderBotStack EventBridge rule is created with correct schedule" name="AiReminderBotStack EventBridge rule is created with correct schedule" time="1.589">
+    </testcase>
+    <testcase classname="AiReminderBotStack Lambda has permission to publish to SNS" name="AiReminderBotStack Lambda has permission to publish to SNS" time="1.677">
+    </testcase>
+    <testcase classname="AiReminderBotStack Lambda has permission to invoke Bedrock model" name="AiReminderBotStack Lambda has permission to invoke Bedrock model" time="1.488">
+    </testcase>
+  </testsuite>
+</testsuites>
