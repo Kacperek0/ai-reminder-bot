@@ -49,20 +49,3 @@ jobs:
           RECEPIENT_PHONE_NUMBER: ${{ secrets.RECEPIENT_PHONE_NUMBER }}
           CDK_DEFAULT_ACCOUNT: ${{ secrets.CDK_DEFAULT_ACCOUNT }}
           CDK_DEFAULT_REGION: ${{ secrets.CDK_DEFAULT_REGION }}
-
-      - name: Notify deployment status
-        if: always()
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const { owner, repo } = context.repo;
-            const prNumber = context.payload.pull_request.number;
-            const status = ${{ job.status }} === 'success' ? '✅' : '❌';
-            const message = status + ' Deployment ' + (${{ job.status }} === 'success' ? 'completed successfully' : 'failed');
-
-            await github.rest.issues.createComment({
-              owner,
-              repo,
-              issue_number: prNumber,
-              body: message
-            });
