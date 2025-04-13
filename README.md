@@ -34,7 +34,7 @@ The application is built using AWS CDK and consists of the following components:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ai-reminder-bot.git
+   git clone https://github.com/kacperek0/ai-reminder-bot.git
    cd ai-reminder-bot
    ```
 
