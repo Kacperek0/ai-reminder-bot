@@ -16,7 +16,7 @@ export class AiReminderBotStack extends cdk.Stack {
     const bedrockTitan = bedrock.FoundationModel.fromFoundationModelId(
       this,
       'Titan',
-      bedrock.FoundationModelIdentifier.AMAZON_TITAN_TEXT_EXPRESS_V1_0_8K
+      bedrock.FoundationModelIdentifier.AMAZON_NOVA_MICRO_V1_0_128K
     );
 
     const reminderTopic = new sns.Topic(this, 'ReminderTopic');
@@ -52,7 +52,7 @@ export class AiReminderBotStack extends cdk.Stack {
     reminderFunction.addToRolePolicy(
       new cdk.aws_iam.PolicyStatement({
         actions: ['bedrock:InvokeModel'],
-        resources: [bedrockTitan.modelArn.replace(':0:8k', '')],
+        resources: [bedrockTitan.modelArn.replace(':0:128k', '')],
       })
     );
 
