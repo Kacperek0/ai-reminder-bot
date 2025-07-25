@@ -16,7 +16,7 @@ export class AiReminderBotStack extends cdk.Stack {
     const bedrockTitan = bedrock.FoundationModel.fromFoundationModelId(
       this,
       'Titan',
-      bedrock.FoundationModelIdentifier.AMAZON_NOVA_MICRO_V1_0_128K
+      bedrock.FoundationModelIdentifier.AMAZON_NOVA_MICRO_V1_0_128_K
     );
 
     const reminderTopic = new sns.Topic(this, 'ReminderTopic');
